@@ -1,0 +1,65 @@
+header img {border-radius: 50%;
+width: 10%; height: 10%;}
+body{
+    padding: 1%;
+    background-color: dimgrey;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+nav{
+    display:flex; 
+    gap: 2%;
+    padding: 1%; 
+    font-size: 15pt    
+}
+.navbox{
+    padding: 5%;
+background-color:rgb(23, 23, 23);
+color: white;
+height: 28%;
+border-radius: 14px;
+text-decoration: none;
+}
+header{
+    display: flex;
+    gap: 28%
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Távolság az elemek között */
+    padding: 5%;
+}
+main img{
+    width: 85%;
+    padding: 5%;
+    border-radius: 30px;
+}
+footer{
+    background-color: rgb(23, 23, 23);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2%;
+    margin: 0 16%;
+    border-radius: 14px;
+}   
+@media(max-width: 1080px){
+    main{
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}.navbox{
+    height: 45%;
+}
+}
+@media(max-width: 720px){
+    main{
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+}.navbox{
+    height: 45%;
+}
+}
